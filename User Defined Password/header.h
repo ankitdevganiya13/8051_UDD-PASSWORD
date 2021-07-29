@@ -11,9 +11,7 @@ typedef unsigned long int u32;
 typedef   signed long int s32;
 
 
-void io_bit_write(u8 port_num,u8 pin_num,bit val);
-void delay_ms(u16 ms);
-bit io_bit_read(u8 port_num,u8 pin_num);
+extern void delay_ms(u16 ms);
 
 extern void lcd_cmd(u8 cmd);
 extern void lcd_data(u8 d);
@@ -27,7 +25,6 @@ extern void lcd_Shift_Left(void);
 extern void lock(void);
 extern void open(void);
 extern void input(s8 arr[]);
-
 
 extern u8 keyscan(void);
 
